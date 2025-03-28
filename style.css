@@ -36,7 +36,7 @@ body {
     background-color: black;
     overflow-x: hidden;
     justify-content: center;
-    background-image: url(src/bg-spiders.png);
+    background-image: url(../src/img/bg-spiders.png);
 }
 
 /* Header */
