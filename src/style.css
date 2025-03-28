@@ -1,12 +1,12 @@
 /* Fontes personalizadas */
 @font-face {
     font-family: "The Great Reaper";
-    src: url(src/fonts/MB-The_Great_Reaper.ttf);
+    src: url(fonts/MB-The_Great_Reaper.ttf);
 }
 
 @font-face {
     font-family: "Venice Classic";
-    src: url(src/fonts/VeniceClassic.ttf);
+    src: url(fonts/VeniceClassic.ttf);
 }
 
 /* Variáveis globais */
@@ -36,7 +36,7 @@ body {
     background-color: black;
     overflow-x: hidden;
     justify-content: center;
-    background-image: url(.);
+    background-image: url(img/bg-spiders.png);
 }
 
 /* Header */
