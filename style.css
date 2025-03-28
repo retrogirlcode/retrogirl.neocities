@@ -1,0 +1,311 @@
+/* Fontes personalizadas */
+@font-face {
+    font-family: "The Great Reaper";
+    src: url(src/MB-The_Great_Reaper.ttf);
+}
+
+@font-face {
+    font-family: "Venice Classic";
+    src: url(src/VeniceClassic.ttf);
+}
+
+/* Variáveis globais */
+:root {
+    --red: #B00303;
+    --title: "The Great Reaper";
+    --body: "Venice Classic";
+}
+
+/* Estilos globais */
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: var(--body);
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'left main right'
+        'footer footer footer';
+    grid-template-columns: 150px minmax(300px, 900px) 150px;
+    padding: 15px;
+    gap: 20px;
+    background-color: black;
+    overflow-x: hidden;
+    justify-content: center;
+    background-image: url(src/bg-spiders.png);
+}
+
+/* Header */
+header {
+    grid-area: header;
+}
+
+header h1 {
+    font-family: var(--title);
+    font-size: 10em;
+    color: var(--red);
+    text-shadow: 0px 1px 8px var(--red);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h1:hover {
+    color: rgb(216, 203, 203);
+}
+
+/* Main */
+main {
+    grid-area: main;
+    height: 100%;
+    border: 5px double var(--red);
+    border-radius: 5px;
+    justify-content: center;
+    padding: 10px;
+    background-color: #000000;
+}
+
+main .introducion p {
+    font-size: 2em;
+    text-indent: 1em;
+    text-align: center;
+    margin: 10px;
+}
+#Currently{
+    font-size: 0.7em;
+    padding: 5px;
+}
+
+/* Detalhes */
+#detail {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    gap: 20px;
+    font-size: 1.2em;
+}
+
+#detail .container {
+    width: 400px;
+    height: 200px;
+    border: 5px double var(--red);
+    padding: 10px;
+    overflow: auto;
+    text-align: center;
+}
+
+#detail .container img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+/* Sidebar esquerda */
+#left {
+    grid-area: left;
+    border-radius: 5px;
+    border: 5px double var(--red);
+    padding: 0px;
+    height: 100%;
+    background-color: black;
+    font-size: 1.2em;
+}
+
+#left h2 {
+    color: white;
+    text-align: center;
+    background-repeat: no-repeat;
+    text-shadow: 0 6px 5px #ff0000;
+    margin-top: 20px;
+}
+
+#left h3 {
+    color: white;
+    text-shadow: 0 6px 5px #ff0000;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#left nav a {
+    text-decoration: none;
+    display: block;
+    padding: 3px 15px;
+    display: list-item;
+    list-style: "♱ " inside ;
+    
+}
+
+#left nav a:hover {
+    color: var(--red);
+    text-decoration: underline;
+}
+#left #guestbook {
+    
+    background-color: black;
+    color: var(--red);
+    padding: 3px;
+    font-size: 0.9em;
+    margin: 10px;
+    border: 3px double var(--red);
+    border-radius: 5px;
+}
+#left #guestbook:hover{
+    background-color: var(--red);
+    color: white;
+}
+
+/* texto */
+strong {
+    color: var(--red);
+    font-weight: 800;
+}
+h1,h2,h3{
+    color: var(--red);
+}
+
+/* MP3 Player */
+#mp3 {
+    grid-area: right;
+    background: rgb(131, 0, 0);
+    width: 150px;
+    height: 327px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 6px 0px #f2000069;
+}
+
+.screen {
+    background: #070709;
+    border-style: solid;
+    border-color: #1c1c1c;
+    border-width: 10px 8px 22px 8px;
+    border-radius: 3px;
+    width: 110px;
+    height: 130px;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+
+#listening {
+    overflow-y: auto;
+    width: 110px;
+    height: 130px;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
+#listening img {
+    width: 80px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+#trackName {
+    width: 100%;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+#artistName {
+    font-size: 0.6rem;
+}
+
+.botao-1 {
+    background: #efefef;
+    border-radius: 50%;
+    border: 1px solid #fb0000;
+    width: 108px;
+    height: 108px;
+    position: relative;
+    top: 40px;
+    margin: auto;
+}
+
+.botao-2 {
+    background: #dadada;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    border: 1px solid #ff0000;
+}
+
+.menu p, .next p, .back-next p, .vol p, .pause {
+    color: #000000;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 8px 0 8px;
+}
+
+.back-next {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 13px;
+}
+
+.vol, .menu {
+    position: relative;
+    top: 10px;
+}
+
+#mp3:hover {
+    rotate: 10deg;
+    transition: 0.3s;
+}
+
+/* Footer */
+footer {
+    grid-area: footer;
+}
+
+/* Scrollbar personalizado */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: black;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 20px;
+    border: 2px solid var(--red);
+}
+@media screen and (max-width: 770px) {
+    header h1{
+        font-size: 5em;
+    }
+    body {
+        
+    display: grid;
+    grid-template-areas: 
+        'header header '
+        'left main'
+        'footer footer';
+        grid-template-columns: 30% 65%;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+    .introducion p{
+        font-size: 1em;
+    }
+    #detail{
+        flex-wrap: wrap;
+    }
+
+    #mp3{
+        display: none;
+    }
+}
