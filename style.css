@@ -1,12 +1,12 @@
 /* Fontes personalizadas */
 @font-face {
     font-family: "The Great Reaper";
-    src: url(src/fonts/MB-The_Great_Reaper.ttf);
+    src: url(../src/fonts/MB-The_Great_Reaper.ttf);
 }
 
 @font-face {
     font-family: "Venice Classic";
-    src: url(src/fonts/VeniceClassic.ttf);
+    src: url(../src/fonts/VeniceClassic.ttf);
 }
 
 /* Variáveis globais */
