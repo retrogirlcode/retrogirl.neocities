@@ -102,6 +102,19 @@ main .introducion p {
     height: 100px;
     margin: 5px;
 }
+#todo{
+    margin-left: 15px ;
+    border: 5px double var(--red);
+    width: 140px;
+    height: 230px; 
+    padding: 10px;
+ 
+}
+#todo ul li{
+    font-size: 18px;
+    text-align: left;
+    list-style-position: inside ;
+}
 
 /* Sidebar esquerda */
 #left {
@@ -164,6 +177,8 @@ strong {
     font-weight: 800;
 }
 h1,h2,h3{
+    text-align: center;
+    margin-bottom: 15px;
     color: var(--red);
 }
 
