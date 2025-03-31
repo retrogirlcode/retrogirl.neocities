@@ -1,0 +1,41 @@
+article h1, article h2, article h3{
+    text-align: left;
+}
+article h1{
+    font-size: 3em;
+}
+article h2{
+    font-size: 2em;
+}
+article h3{
+    font-size: 1.6em;
+}
+ article ul li{
+    list-style-position: inside ;
+    font-size: 1.2em;
+}
+.btns{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    gap: 5px;
+}
+.btns img:hover{
+    width: 110px;
+    
+}
+.btns a:hover{
+    font-size: 1.5em;
+    transition: 0.2s;
+}
+article hr{
+    border: 0;
+    border-top: 3px dotted red;
+    margin: 20px 0;
+   
+   
+}
+article{
+    padding: 15px;
+}
