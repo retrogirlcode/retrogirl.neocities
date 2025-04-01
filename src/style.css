@@ -153,7 +153,7 @@ section {
     display: block;
     padding: 3px 15px;
     display: list-item;
-    list-style: "♱ " inside ;
+    list-style: "♱" inside ;
     
 }
 
@@ -165,9 +165,9 @@ section {
     
     background-color: black;
     color: var(--red);
-    padding: 3px;
-    font-size: 0.9em;
-    margin: 8px;
+    padding: 5px;
+    font-size: 1em;
+    margin: 20px auto ;
     border: 3px double var(--red);
     border-radius: 5px;
     width: 100%;
@@ -209,7 +209,7 @@ footer {
 }
 
 footer li{
-    list-style: "♱ " inside ;
+    list-style: "♱" inside ;
 }
 
 footer li:hover, a:hover{
@@ -241,7 +241,7 @@ footer li:hover, a:hover{
         'header header '
         'left main'
         'footer footer';
-        grid-template-columns: 30% 65%;
+        grid-template-columns: 40% 60%;
         justify-content: center;
         overflow-x: hidden;
     }
@@ -251,8 +251,6 @@ footer li:hover, a:hover{
     #detail{
         flex-wrap: wrap;
     }
-    #guestbook img{
-        display: none;
-    }
+
 
 }
