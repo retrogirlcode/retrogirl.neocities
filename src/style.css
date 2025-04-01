@@ -251,6 +251,9 @@ footer li:hover, a:hover{
     #detail{
         flex-wrap: wrap;
     }
+    #pet{
+        display: none;
+    }
 
 
 }
