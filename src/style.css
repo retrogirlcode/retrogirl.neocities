@@ -23,27 +23,11 @@
     color: white;
     font-family: var(--body);
 }
-
-body {
-    display: grid;
-    grid-template-areas: 
-        'header header header'
-        'left main right'
-        'footer footer footer';
-    grid-template-columns: 150px minmax(300px, 900px) 150px;
-    padding: 15px;
-    gap: 20px;
-    background-color: black;
-    overflow-x: hidden;
-    justify-content: center;
+body{
     background-image: url(img/bg-spiders.png);
+    padding: 30px;
 }
-
 /* Header */
-header {
-    grid-area: header;
-}
-
 header h1 {
     font-family: var(--title);
     font-size: 10em;
@@ -54,132 +38,76 @@ header h1 {
     text-decoration: none;
 }
 
+main {
+    max-width: 900px; height: 100%;
+    display: grid;
+    grid-template-areas: 
+        'nav introducion'
+        'about deco'
+        'footer footer ';
+    grid-template-columns: max(300px) max(600px);
+    background-color: black;
+    border: 5px double var(--red);
+    border-radius: 5px;
+    margin: auto;
+    align-items: center;
+}
+
+
 header h1:hover {
     color: rgb(216, 203, 203);
 }
 
-/* Main */
-main {
-    
-    grid-area: main;
-    height: 100%;
-    border: 5px double var(--red);
-    border-radius: 5px;
-    justify-content: center;
-    padding: 10px;
-    background-color: #000000;
-}
-
 .introducion{
-    display: block;
+    grid-area: introducion;
+  
 }
 
 main .introducion p {
-    font-size: 2em;
+    font-size: 1.8em;
     text-indent: 1em;
     text-align: center;
     margin: 10px;
 }
 
-
-/* Detalhes */
-section {
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    gap: 20px;
-    
-}
-
-.container {
-    width: 50%;
-    max-height: 190px;
-    border: 5px double var(--red);
-    padding: 10px;
-    overflow-x: hidden;
-    text-align: center;
-}
-
-#detail .container img {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
-}
-#todo{
-    margin-left: 15px ;
-    border: 5px double var(--red);
-    width: 140px;
-    height: 230px; 
-    padding: 10px;
- 
-}
-#todo ul li{
-    font-size: 18px;
-    text-align: left;
-    list-style-position: inside ;
-    padding: 5px;
-}
-
 /* Sidebar esquerda */
- #left {
-    grid-area: left;
+ #nav {
+    grid-area: nav;
     border-radius: 5px;
-    border: 5px double var(--red);
+  justify-self: start;
     padding: 0 10px 10px 10px;
     height: 100%;
-    background-color: black;
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
-#left h2 {
-    color: white;
-    text-align: center;
-    background-repeat: no-repeat;
-    text-shadow: 0 6px 5px #ff0000;
-    margin-top: 20px;
-  
-}
 
-#left h3 {
-    color: white;
-    text-shadow: 0 6px 5px #ff0000;
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: 20px;
-}
-
-#left nav a {
+#nav a {
     text-decoration: none;
     display: block;
     padding: 3px 15px;
     display: list-item;
-    list-style: "♱" inside ;
+    list-style: "♱ " inside ;
+    border: 0;
+    border-bottom: 2px solid var(--red);
+    
     
 }
 
-#left nav a:hover {
+#nav nav a:hover {
     color: var(--red);
-    text-decoration: underline;
+    background-color: white;
 }
-#left #guestbook {
+.about{
+    grid-area: about;
+    border-right: 5px double var(--red);
+    padding: 10px;
     
-    background-color: black;
-    color: var(--red);
-    padding: 5px;
-    font-size: 1em;
-    margin: 20px auto ;
-    border: 3px double var(--red);
-    border-radius: 5px;
-    width: 100%;
 }
-#left #guestbook:hover{
-    background-color: var(--red);
-    color: white;
+.about ul li{
+    list-style: none;
 }
-#Currently{
-    font-size: 0.7em;
-    padding: 5px;
-}
+
+
 /* texto */
 strong {
     color: var(--red);
@@ -229,31 +157,4 @@ footer li:hover, a:hover{
     background-color: black;
     border-radius: 20px;
     border: 2px solid var(--red);
-}
-@media screen and (max-width: 770px) {
-    header h1{
-        font-size: 5em;
-    }
-    body {
-        
-    display: grid;
-    grid-template-areas: 
-        'header header '
-        'left main'
-        'footer footer';
-        grid-template-columns: 40% 60%;
-        justify-content: center;
-        overflow-x: hidden;
-    }
-    .introducion p{
-        font-size: 1em;
-    }
-    #detail{
-        flex-wrap: wrap;
-    }
-    #pet{
-        display: none;
-    }
-
-
 }
