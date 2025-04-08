@@ -78,8 +78,9 @@ main .introducion p:first-child{
 }
 
 .deco{
-    max-height: 100%;
-    max-width: 100%;
+    width: 60%;
+    height: auto;
+    gap: 20px;
     display: flex;
     flex-direction: row;
 }
@@ -87,21 +88,34 @@ main .introducion p:first-child{
 .deco img{
     max-height: 100%;
     width: 100%;
-    justify-content: stretch;
-    align-self: stretch;
+    
+}
+.about nav{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 #asideimg{
     position: absolute;
+    top: 700px;
     right: 0;
-    bottom: 0;
 }
 
 #asideimg img{
-    justify-content: end;
-    filter: drop-shadow(1px 1px 10px #ca000767);
+    filter: drop-shadow(1px 12px 10px #ca000767);
     width: 300px;
-    margin-right: 20px;
 }
-
+.playing {
+    animation: rotate-animation 8s infinite linear;
+  }
+  
+  @keyframes rotate-animation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 

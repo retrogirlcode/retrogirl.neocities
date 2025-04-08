@@ -50,13 +50,30 @@
             </section>
             <section class="deco">
                 <img src="../src/img/slipknot.webp" alt="">
+                <img  id="cd" class="playing" src="../src/img/cd-spit.png" onclick="pause()" title="click forpause/unpause">
+                <audio id="audio" loop src="https://files.catbox.moe/mr8fry.mp3"></audio>
+
             </section>
         </main>
-        <aside id="asideimg"><img src="../src/img/cats.png" alt="cats"></aside>
     <footer>
         <p>made by retrogirl 2025 </p>
          <li> <a href="https://github.com/retrogirlcode/retrogirl.neocities">github</a></li> 
          <li><a href="about.html">about</a></li>
         </footer>
 </body>
+<aside id="asideimg"><img src="../src/img/cats.png" alt="cats"></aside>
 </html>
+<script>
+    const myaudio = document.getElementById("audio");
+    const cd = document.getElementById("cd")
+
+    function pause (){
+        if (cd.classList.contains('playing')){   
+        myaudio.pause();
+        }else{
+            myaudio.play();
+        }
+        cd.classList.toggle('playing')
+        
+           }
+</script>
