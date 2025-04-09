@@ -1,6 +1,6 @@
 
 main {
-    max-width: 900px; height: 100%;
+    width: 900px;
     display: grid;
     grid-template-areas: 
         'nav introducion'
@@ -18,20 +18,12 @@ main {
     min-width: 300px;
     height: 100%;
     grid-area: introducion;
-    background-image: url("https://i.pinimg.com/736x/48/67/4e/48674e81f3e53d12bbdf328211f2d225.jpg" );
-    background-color: rgba(0, 0, 0, 0.897);
-    background-blend-mode: multiply;
     align-self: center;
-   
-  
 }
 
 main .introducion p {
-    background-color: rgba(0, 0, 0, 0.877);
     font-size: 1.8em;
-    text-indent: 1em;
     text-align: center;
-    border-radius: 5px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -78,17 +70,43 @@ main .introducion p:first-child{
 }
 
 .deco{
-    width: 60%;
-    height: auto;
-    gap: 20px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    height: 400px;
+    align-content: center;
+    background-image: url("../img/redskull.jpg" );
+    background-color: rgba(0, 0, 0, 0.815);
+    background-blend-mode: multiply;
+
+}
+.deco .gif {
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+.deco .cd{
+    display: flex;
+    align-items: center;
+    width: 200px;
 }
 
-.deco img{
-    max-height: 100%;
-    width: 100%;
-    
+.playing {
+    animation: rotate-animation 8s infinite linear;
+  }
+  
+  @keyframes rotate-animation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+ .text{
+    margin-top: 5px;
+}
+.text marquee{
+    font-size: 1.2em;
 }
 .about nav{
     display: flex;
@@ -106,16 +124,5 @@ main .introducion p:first-child{
     filter: drop-shadow(1px 12px 10px #ca000767);
     width: 300px;
 }
-.playing {
-    animation: rotate-animation 8s infinite linear;
-  }
-  
-  @keyframes rotate-animation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+
 

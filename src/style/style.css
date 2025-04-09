@@ -1,12 +1,12 @@
 /* Fontes personalizadas */
 @font-face {
     font-family: "The Great Reaper";
-    src: url(fonts/MB-The_Great_Reaper.ttf);
+    src: url(../fonts/MB-The_Great_Reaper.ttf);
 }
 
 @font-face {
     font-family: "Venice Classic";
-    src: url(fonts/VeniceClassic.ttf);
+    src: url(../fonts/VeniceClassic.ttf);
 }
 
 /* Variáveis globais */
@@ -25,7 +25,7 @@
     cursor: url(https://cur.cursors-4u.net/others/oth-8/oth704.cur), auto !important;
 }
 body{
-    background-image: url(img/bg-spiders.png);
+    background-image: url(../img/bg-spiders.png);
     padding: 30px;
 }
 /* Header */

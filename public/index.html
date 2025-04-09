@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../src/img/fav.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../src/style.css">
-    <link rel="stylesheet" href="../src/index.css">
+    <link rel="stylesheet" href="../src/style/style.css">
+    <link rel="stylesheet" href="../src/style/index.css">
     <title>Retrogirl blog</title>
 </head>
     
@@ -18,8 +18,6 @@
             <nav>
                 <img style="width: 100%; height: 24px; position: relative; top: 0px;" src="https://64.media.tumblr.com/d287e359504b31a54ffe06385b9b0549/0c5d4fa4b3ef8e34-23/s540x810/8b0ea382748f654c6484a80705205e8f1c4c9597.gifv" aria-hidden="true">
                 <a href="index.html">home</a>
-                <a href="#">bookmark</a>
-                <a href="">Journal</a>
                 <a href="about.html">About the site</a>
                 <a target="_blank" href="http://users3.smartgb.com/g/g.php?a=s&i=g36-38257-b6"> Guestbook</a>
             </nav>
@@ -49,9 +47,15 @@
                 </nav>
             </section>
             <section class="deco">
-                <img src="../src/img/slipknot.webp" alt="">
-                <img  id="cd" class="playing" src="../src/img/cd-spit.png" onclick="pause()" title="click forpause/unpause">
-                <audio id="audio" loop src="https://files.catbox.moe/mr8fry.mp3"></audio>
+                
+                <div class="gif"><img src="../src/img/slipknot.webp" alt=""></div>
+                <div class="cd">
+                    <img  id="cd" class="playing" src="../src/img/cd-spit.png" onclick="pause()" title="click forpause/unpause">
+                    <audio id="audio" loop autoplay src="https://files.catbox.moe/mr8fry.mp3"></audio>
+                </div>
+                <div class="text">
+                    <marquee behavior="" direction="">♫⋆｡♪ ₊˚♬ ﾟ.playing now "Get Off (You Can Eat a Dick) by Kittie" ♫⋆｡♪ ₊˚♬ ﾟ.</marquee>
+                </div>
 
             </section>
         </main>
@@ -63,17 +67,4 @@
 </body>
 <aside id="asideimg"><img src="../src/img/cats.png" alt="cats"></aside>
 </html>
-<script>
-    const myaudio = document.getElementById("audio");
-    const cd = document.getElementById("cd")
-
-    function pause (){
-        if (cd.classList.contains('playing')){   
-        myaudio.pause();
-        }else{
-            myaudio.play();
-        }
-        cd.classList.toggle('playing')
-        
-           }
-</script>
+<script src="../src/scripts/audio.js"></script>
