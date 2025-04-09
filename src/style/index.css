@@ -117,12 +117,17 @@ main .introducion p:first-child{
 #asideimg{
     position: absolute;
     top: 700px;
-    right: 0;
+    left: 900px;
 }
 
 #asideimg img{
     filter: drop-shadow(1px 12px 10px #ca000767);
     width: 300px;
+}
+@media screen and (max-width: 600px){
+    #asideimg{
+        display: none;
+    }
 }
 
 

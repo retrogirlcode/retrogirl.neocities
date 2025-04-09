@@ -27,6 +27,9 @@
 body{
     background-image: url(../img/bg-spiders.png);
     padding: 30px;
+    width: 900px;
+    position: relative;
+    margin: auto;
 }
 /* Header */
 header h1 {
@@ -93,4 +96,21 @@ footer li:hover, a:hover{
     background-color: black;
     border-radius: 20px;
     border: 2px solid var(--red);
+}
+
+/*aside img*/
+#asideimg{
+    position: absolute;
+    top: 700px;
+    left: 900px;
+}
+
+#asideimg img{
+    filter: drop-shadow(1px 12px 10px #ca000767);
+    width: 300px;
+}
+@media screen and (max-width: 600px){
+    #asideimg{
+        display: none;
+    }
 }
