@@ -1,0 +1,27 @@
+ @import url('https://fonts.googleapis.com/css2?family=Short+Stack&display=swap');
+
+ #more{
+    background-color: rgba(0, 0, 0, 0.788);
+    background-image: url(https://i.pinimg.com/736x/53/e4/26/53e4269ad8b2fd6ae938d02221f45aa6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-blend-mode: multiply;
+    margin: auto;
+    text-align: center;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 40% 40%;
+}
+
+main div{
+    margin: 15px;
+}
+
+img:hover{
+    rotate: 10deg;
+}
+
