@@ -12,7 +12,7 @@ main {
     margin: auto;
     align-items: center;
 }
-
+/*intro*/
 .introducion{
     max-width: 600px;
     min-width: 300px;
@@ -35,7 +35,7 @@ main .introducion p:first-child{
     margin-top: 50px;
 }
 
-/* Sidebar esquerda */
+/* links */
  #nav {
     grid-area: nav;
     border-radius: 5px;
@@ -64,6 +64,8 @@ main .introducion p:first-child{
     background-color: white;
 }
 
+/*deco*/
+
 .deco{
     display: flex;
     flex-direction: column;
@@ -88,6 +90,7 @@ main .introducion p:first-child{
     width: 100%;
 }
 
+/*about*/
 
 .about{
     grid-area: about;
@@ -114,6 +117,8 @@ main .introducion p:first-child{
     width: 29px;
     transition: 1s;
 }
+
+/*aside cat img*/
 
 #asideimg{
     position: absolute;

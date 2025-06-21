@@ -1,5 +1,6 @@
 const myaudio = document.getElementById("audio");
-    const cd = document.getElementById("guitar")
+    const cd = document.getElementById("tv");
+    myaudio.play();
 
     function pause (){
         if (cd.classList.contains('playing')){   
@@ -10,3 +11,4 @@ const myaudio = document.getElementById("audio");
         cd.classList.toggle('playing')
         
            }
+         
