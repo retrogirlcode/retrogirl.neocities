@@ -1,5 +1,5 @@
 const myaudio = document.getElementById("audio");
-    const cd = document.getElementById("cd")
+    const cd = document.getElementById("guitar")
 
     function pause (){
         if (cd.classList.contains('playing')){   

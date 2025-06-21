@@ -4,7 +4,7 @@ main {
     display: grid;
     grid-template-areas: 
         'nav introducion'
-        'about deco';
+        'deco about';
     grid-template-columns: minmax(200px,300px) minmax(300px,600px);
     background-color: black;
     border: 5px double var(--red);
@@ -16,9 +16,13 @@ main {
 .introducion{
     max-width: 600px;
     min-width: 300px;
-    height: 100%;
+    min-height: 250px;
     grid-area: introducion;
     align-self: center;
+    background-image: url("../img/redskull.jpg" );
+    background-color: rgba(0, 0, 0, 0.89);
+    background-blend-mode: multiply;
+  
 }
 
 main .introducion p {
@@ -37,7 +41,7 @@ main .introducion p:first-child{
     border-radius: 5px;
   justify-self: start;
     padding: 0 10px 10px 10px;
-    height: 100%;
+    height: 250px;
     font-size: 2em;
     border-right: 5px double var(--red);
 }
@@ -59,60 +63,56 @@ main .introducion p:first-child{
     color: var(--red);
     background-color: white;
 }
-.about{
-    grid-area: about;
-    border-right: 5px double var(--red);
-    padding: 10px;
-    
-}
-.about ul li{
-    list-style: none;
-}
 
 .deco{
     display: flex;
-    flex-wrap: wrap;
-    height: 400px;
+    flex-direction: column;
+    height: 100%;
     align-content: center;
-    background-image: url("../img/redskull.jpg" );
-    background-color: rgba(0, 0, 0, 0.815);
-    background-blend-mode: multiply;
+    border-top: 5px double var(--red);
+    border-right: 5px double var(--red);
+    padding: 5px;
+    margin-top: 15px;
+   
 
 }
-.deco .gif {
-    display: flex;
-    align-items: center;
-    width: 400px;
+ .deco .song {
+    position: relative;
+    top:25%;
+    max-width: 300px;
+    min-width: 200px;
+    padding: 5px;
+   
 }
-.deco .cd{
-    display: flex;
-    align-items: center;
-    width: 200px;
-    cursor: pointer;
+.song #tv{
+    width: 100%;
 }
 
-.playing {
-    animation: rotate-animation 8s infinite linear;
-  }
-  
-  @keyframes rotate-animation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
- .text{
-    margin-top: 5px;
+
+.about{
+    grid-area: about;
+    border-top: 5px double var(--red);
+    padding: 10px;
+    
 }
-.text marquee{
+.about h2{
+    font-size: 1.8em;
+}
+.about ul li{
+    list-style: none;
     font-size: 1.2em;
 }
+
+
 .about nav{
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+
+.about nav img:hover{
+    width: 29px;
+    transition: 1s;
 }
 
 #asideimg{
