@@ -7,7 +7,7 @@ function show( index){
     switch(index){
         case (1):
             text.innerHTML = `
-            <div class="title"><p>X O -</p></div>
+            <div class="title"><p>- □ X</p></div>
                 <div class="inside">
                     <p>Songs where I feel like I'm a jellyfish underwater</p>
                     <ol>
@@ -27,17 +27,17 @@ function show( index){
                 </div>
             `
             link.innerHTML = `
-              <div class="title"><p>X O -</p></div>
+              <div class="title"><p>- □ X</p></div>
 
-           <iframe width="100%" height="260px" src="https://www.youtube.com/embed/videoseries?si=jL9RtDVsiV3YX7nx&amp;list=PLZoaSVF3EZTZdV1yMH6QlIkXEFYTeGozH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           <iframe width="100%" height="275px" src="https://www.youtube.com/embed/videoseries?si=jL9RtDVsiV3YX7nx&amp;list=PLZoaSVF3EZTZdV1yMH6QlIkXEFYTeGozH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             `
             img.innerHTML = `
-                 <div class="title"><p>X O -</p></div>
+                 <div class="title"><p>- □ X</p></div>
         <img src="src/img/jelly.jpg" alt="">
             `
             break
         case(2):
-        text.innerHTML = `OIeeee`
+        
     }
     text.style.display = "block"
     link.style.display = "block"

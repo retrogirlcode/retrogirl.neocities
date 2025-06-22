@@ -1,21 +1,49 @@
- #playlist{
-    background-color: black;
-    background-image: none;
-    padding: 0;
+ @import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+:root{
+    --blue: rgba(146, 189, 232, 0.995);
+}
+
+ *{
+     padding: 0;
     margin: 0;
+    font-family: "Gamja Flower", sans-serif;
+    color: black;
+    cursor: default;
+ }
+ #playlist{
+    width: 900px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%2396ccea' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+
+    padding: 0;
 }
 
  #playlist div{
-      border: 5px double var(--red);
-      background-color: black;
+      border: 5px solid var(--blue);
+      background-color: white;
       padding: 0px;
+      
+}
+
+.list, .text, .img, .link{
+    box-shadow: 2px 1px 7px 0px #000000a6;
 }
 
  #playlist div.title{
     border: none;
     margin: 0 auto;
-    background-color: var(--red);
+    background-color: var(--blue);
     text-align: right;
+    height: 25px;
+    
+}
+
+#playlist div.title p{
+    color: white;
+=
 }
 
  #playlist div.inside{
@@ -34,7 +62,7 @@
 }
 
 .list button{
-    color: var(--red);
+    color: rgb(116, 130, 255);
     background: none;
     border: none;
     font-size: 2em;
@@ -59,20 +87,20 @@
 
 .text .inside p{
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin-bottom: 20px;
 }
 
 
 .text ol{
     list-style: decimal inside;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .img{
     display: none;
     width: 200px;
-    height: 220px;
+    height: 225px;
     position: absolute;
     top: 450px;
     left: 1200px;
@@ -92,4 +120,8 @@
     top: 250px;
     left: 35px;
     padding: 15px;
+}
+
+.link iframe{
+    position: relative;
 }
