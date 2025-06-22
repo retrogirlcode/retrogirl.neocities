@@ -1,0 +1,83 @@
+ #playlist{
+    background-color: black;
+    background-image: none;
+    padding: 0;
+    margin: 0;
+}
+
+ #playlist div{
+      border: 5px double var(--red);
+      background-color: black;
+      padding: 0px;
+}
+
+ #playlist div.title{
+    border: none;
+    margin: 0 auto;
+    background-color: var(--red);
+    text-align: right;
+}
+
+ #playlist div.inside{
+    border: none;
+    padding: 15px;
+}
+
+.list{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 20px;
+
+}
+
+.list button{
+    color: var(--red);
+    background: none;
+    border: none;
+    font-size: 2em;
+    display: block;
+}
+
+.list button:hover{
+    text-decoration: underline;
+}
+
+.text{
+    width: 800px;
+    height: 500px;
+    font-size: 1.2em;
+    position: absolute;
+    top: 20px;
+    left: 60%;
+    padding: 20px;
+    text-align: justify;
+}
+.text ol{
+    list-style: decimal inside;
+    font-size: 1.2em;
+}
+
+.img{
+    width: 200px;
+    height: 220px;
+    position: absolute;
+    top: 450px;
+    left: 1200;
+    
+}
+
+.img img{
+    width: 100%;
+    height: 200px;
+}
+
+.link{
+    width: 300px;
+    height: 420px;
+    position: absolute;
+    top: 250px;
+    left: 35px;
+}
