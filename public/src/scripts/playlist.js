@@ -36,6 +36,34 @@ function show( index){
             `
             break
         case(2):
+        text.innerHTML = `
+                <div class="inside">
+                    <p>Strawberry-flavored music</p>
+                    <ol>
+                        <li>Strawberry soda - Lossemble</li>
+                        <li>Coloring Book - Oh my girl</li>
+                        <li>Hello - Joy</li>
+                        <li>Bomber minmi - Serani Poji</li>
+                        <li>Eye Eye Eyes - Twice</li>
+                        <li>Take a bite - Beabadoobee</li>
+                        <li>Love Bomb - Fromis_9
+                        <li>For Jasmine - bôa</li>
+                        <li>Only - LeeHi</li>
+                        <li>Day 1 - Red Velvet</li>
+                        <li>Heart Attack - Loona(Chuu)
+                    </ol>
+                </div>
+            `
+            link.innerHTML = `
+
+
+           <iframe width="100%" height="300px" src="https://www.youtube.com/embed/videoseries?si=qktFCcWx870Jp1VI&amp;list=PLZoaSVF3EZTY-0yfJRfl_dpt7WPnwAfgn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            `
+            img.innerHTML = `
+    
+        <img src="src/img/strawberry.jpg" alt="">
+            `
+            break
         
     }
     text.style.display = "block"
