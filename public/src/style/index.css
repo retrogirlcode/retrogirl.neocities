@@ -73,14 +73,12 @@ main .introducion p:first-child{
     align-content: center;
     border-top: 5px double var(--red);
     border-right: 5px double var(--red);
-    padding: 5px;
-    margin-top: 15px;
+    
    
 
 }
  .deco .song {
-    position: relative;
-    top:25%;
+   margin-top: 35px;
     max-width: 300px;
     min-width: 200px;
     padding: 5px;
@@ -136,4 +134,19 @@ main .introducion p:first-child{
     }
 }
 
+/*buttum area*/
 
+.mybtn textarea{
+    color: black;
+    font: 1em sans-serif;
+}
+.mybtn{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    gap: 5px;
+}
+
+.mybtn textarea::-webkit-scrollbar {
+    display: none;
+}
